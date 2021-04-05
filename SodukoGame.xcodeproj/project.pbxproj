@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB9CB469261BD0BB009EC3D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9CB468261BD0BB009EC3D8 /* AppDelegate.swift */; };
+		BB9CB46B261BD0BB009EC3D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9CB46A261BD0BB009EC3D8 /* SceneDelegate.swift */; };
+		BB9CB46D261BD0BB009EC3D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9CB46C261BD0BB009EC3D8 /* ViewController.swift */; };
+		BB9CB470261BD0BB009EC3D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9CB46E261BD0BB009EC3D8 /* Main.storyboard */; };
+		BB9CB472261BD0BC009EC3D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9CB471261BD0BC009EC3D8 /* Assets.xcassets */; };
+		BB9CB475261BD0BC009EC3D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9CB473261BD0BC009EC3D8 /* LaunchScreen.storyboard */; };
+		BB9CB480261BD0BC009EC3D8 /* SodukoGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9CB47F261BD0BC009EC3D8 /* SodukoGameTests.swift */; };
+		BB9CB48B261BD0BC009EC3D8 /* SodukoGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9CB48A261BD0BC009EC3D8 /* SodukoGameUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB9CB47C261BD0BC009EC3D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB9CB45D261BD0BB009EC3D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB9CB464261BD0BB009EC3D8;
+			remoteInfo = SodukoGame;
+		};
+		BB9CB487261BD0BC009EC3D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB9CB45D261BD0BB009EC3D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB9CB464261BD0BB009EC3D8;
+			remoteInfo = SodukoGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB9CB465261BD0BB009EC3D8 /* SodukoGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SodukoGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB9CB468261BD0BB009EC3D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB9CB46A261BD0BB009EC3D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BB9CB46C261BD0BB009EC3D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB9CB46F261BD0BB009EC3D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB9CB471261BD0BC009EC3D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB9CB474261BD0BC009EC3D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB9CB476261BD0BC009EC3D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB9CB47B261BD0BC009EC3D8 /* SodukoGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SodukoGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB9CB47F261BD0BC009EC3D8 /* SodukoGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SodukoGameTests.swift; sourceTree = "<group>"; };
+		BB9CB481261BD0BC009EC3D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB9CB486261BD0BC009EC3D8 /* SodukoGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SodukoGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB9CB48A261BD0BC009EC3D8 /* SodukoGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SodukoGameUITests.swift; sourceTree = "<group>"; };
+		BB9CB48C261BD0BC009EC3D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB9CB462261BD0BB009EC3D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB9CB478261BD0BC009EC3D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB9CB483261BD0BC009EC3D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB9CB45C261BD0BB009EC3D8 = {
+			isa = PBXGroup;
+			children = (
+				BB9CB467261BD0BB009EC3D8 /* SodukoGame */,
+				BB9CB47E261BD0BC009EC3D8 /* SodukoGameTests */,
+				BB9CB489261BD0BC009EC3D8 /* SodukoGameUITests */,
+				BB9CB466261BD0BB009EC3D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB9CB466261BD0BB009EC3D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB9CB465261BD0BB009EC3D8 /* SodukoGame.app */,
+				BB9CB47B261BD0BC009EC3D8 /* SodukoGameTests.xctest */,
+				BB9CB486261BD0BC009EC3D8 /* SodukoGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB9CB467261BD0BB009EC3D8 /* SodukoGame */ = {
+			isa = PBXGroup;
+			children = (
+				BB9CB468261BD0BB009EC3D8 /* AppDelegate.swift */,
+				BB9CB46A261BD0BB009EC3D8 /* SceneDelegate.swift */,
+				BB9CB46C261BD0BB009EC3D8 /* ViewController.swift */,
+				BB9CB46E261BD0BB009EC3D8 /* Main.storyboard */,
+				BB9CB471261BD0BC009EC3D8 /* Assets.xcassets */,
+				BB9CB473261BD0BC009EC3D8 /* LaunchScreen.storyboard */,
+				BB9CB476261BD0BC009EC3D8 /* Info.plist */,
+			);
+			path = SodukoGame;
+			sourceTree = "<group>";
+		};
+		BB9CB47E261BD0BC009EC3D8 /* SodukoGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB9CB47F261BD0BC009EC3D8 /* SodukoGameTests.swift */,
+				BB9CB481261BD0BC009EC3D8 /* Info.plist */,
+			);
+			path = SodukoGameTests;
+			sourceTree = "<group>";
+		};
+		BB9CB489261BD0BC009EC3D8 /* SodukoGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB9CB48A261BD0BC009EC3D8 /* SodukoGameUITests.swift */,
+				BB9CB48C261BD0BC009EC3D8 /* Info.plist */,
+			);
+			path = SodukoGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB9CB464261BD0BB009EC3D8 /* SodukoGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB9CB48F261BD0BC009EC3D8 /* Build configuration list for PBXNativeTarget "SodukoGame" */;
+			buildPhases = (
+				BB9CB461261BD0BB009EC3D8 /* Sources */,
+				BB9CB462261BD0BB009EC3D8 /* Frameworks */,
+				BB9CB463261BD0BB009EC3D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SodukoGame;
+			productName = SodukoGame;
+			productReference = BB9CB465261BD0BB009EC3D8 /* SodukoGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB9CB47A261BD0BC009EC3D8 /* SodukoGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB9CB492261BD0BC009EC3D8 /* Build configuration list for PBXNativeTarget "SodukoGameTests" */;
+			buildPhases = (
+				BB9CB477261BD0BC009EC3D8 /* Sources */,
+				BB9CB478261BD0BC009EC3D8 /* Frameworks */,
+				BB9CB479261BD0BC009EC3D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB9CB47D261BD0BC009EC3D8 /* PBXTargetDependency */,
+			);
+			name = SodukoGameTests;
+			productName = SodukoGameTests;
+			productReference = BB9CB47B261BD0BC009EC3D8 /* SodukoGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB9CB485261BD0BC009EC3D8 /* SodukoGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB9CB495261BD0BC009EC3D8 /* Build configuration list for PBXNativeTarget "SodukoGameUITests" */;
+			buildPhases = (
+				BB9CB482261BD0BC009EC3D8 /* Sources */,
+				BB9CB483261BD0BC009EC3D8 /* Frameworks */,
+				BB9CB484261BD0BC009EC3D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB9CB488261BD0BC009EC3D8 /* PBXTargetDependency */,
+			);
+			name = SodukoGameUITests;
+			productName = SodukoGameUITests;
+			productReference = BB9CB486261BD0BC009EC3D8 /* SodukoGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB9CB45D261BD0BB009EC3D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					BB9CB464261BD0BB009EC3D8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					BB9CB47A261BD0BC009EC3D8 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = BB9CB464261BD0BB009EC3D8;
+					};
+					BB9CB485261BD0BC009EC3D8 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = BB9CB464261BD0BB009EC3D8;
+					};
+				};
+			};
+			buildConfigurationList = BB9CB460261BD0BB009EC3D8 /* Build configuration list for PBXProject "SodukoGame" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB9CB45C261BD0BB009EC3D8;
+			productRefGroup = BB9CB466261BD0BB009EC3D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB9CB464261BD0BB009EC3D8 /* SodukoGame */,
+				BB9CB47A261BD0BC009EC3D8 /* SodukoGameTests */,
+				BB9CB485261BD0BC009EC3D8 /* SodukoGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB9CB463261BD0BB009EC3D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB9CB475261BD0BC009EC3D8 /* LaunchScreen.storyboard in Resources */,
+				BB9CB472261BD0BC009EC3D8 /* Assets.xcassets in Resources */,
+				BB9CB470261BD0BB009EC3D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB9CB479261BD0BC009EC3D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB9CB484261BD0BC009EC3D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB9CB461261BD0BB009EC3D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB9CB46D261BD0BB009EC3D8 /* ViewController.swift in Sources */,
+				BB9CB469261BD0BB009EC3D8 /* AppDelegate.swift in Sources */,
+				BB9CB46B261BD0BB009EC3D8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB9CB477261BD0BC009EC3D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB9CB480261BD0BC009EC3D8 /* SodukoGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB9CB482261BD0BC009EC3D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB9CB48B261BD0BC009EC3D8 /* SodukoGameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB9CB47D261BD0BC009EC3D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB9CB464261BD0BB009EC3D8 /* SodukoGame */;
+			targetProxy = BB9CB47C261BD0BC009EC3D8 /* PBXContainerItemProxy */;
+		};
+		BB9CB488261BD0BC009EC3D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB9CB464261BD0BB009EC3D8 /* SodukoGame */;
+			targetProxy = BB9CB487261BD0BC009EC3D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB9CB46E261BD0BB009EC3D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB9CB46F261BD0BB009EC3D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB9CB473261BD0BC009EC3D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB9CB474261BD0BC009EC3D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB9CB48D261BD0BC009EC3D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB9CB48E261BD0BC009EC3D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB9CB490261BD0BC009EC3D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MRQ2V4PDG5;
+				INFOPLIST_FILE = SodukoGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gianmarco.SodukoGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB9CB491261BD0BC009EC3D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MRQ2V4PDG5;
+				INFOPLIST_FILE = SodukoGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gianmarco.SodukoGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB9CB493261BD0BC009EC3D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MRQ2V4PDG5;
+				INFOPLIST_FILE = SodukoGameTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gianmarco.SodukoGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SodukoGame.app/SodukoGame";
+			};
+			name = Debug;
+		};
+		BB9CB494261BD0BC009EC3D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MRQ2V4PDG5;
+				INFOPLIST_FILE = SodukoGameTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gianmarco.SodukoGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SodukoGame.app/SodukoGame";
+			};
+			name = Release;
+		};
+		BB9CB496261BD0BC009EC3D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MRQ2V4PDG5;
+				INFOPLIST_FILE = SodukoGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gianmarco.SodukoGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SodukoGame;
+			};
+			name = Debug;
+		};
+		BB9CB497261BD0BC009EC3D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MRQ2V4PDG5;
+				INFOPLIST_FILE = SodukoGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gianmarco.SodukoGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SodukoGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB9CB460261BD0BB009EC3D8 /* Build configuration list for PBXProject "SodukoGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB9CB48D261BD0BC009EC3D8 /* Debug */,
+				BB9CB48E261BD0BC009EC3D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB9CB48F261BD0BC009EC3D8 /* Build configuration list for PBXNativeTarget "SodukoGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB9CB490261BD0BC009EC3D8 /* Debug */,
+				BB9CB491261BD0BC009EC3D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB9CB492261BD0BC009EC3D8 /* Build configuration list for PBXNativeTarget "SodukoGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB9CB493261BD0BC009EC3D8 /* Debug */,
+				BB9CB494261BD0BC009EC3D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB9CB495261BD0BC009EC3D8 /* Build configuration list for PBXNativeTarget "SodukoGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB9CB496261BD0BC009EC3D8 /* Debug */,
+				BB9CB497261BD0BC009EC3D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB9CB45D261BD0BB009EC3D8 /* Project object */;
+}
