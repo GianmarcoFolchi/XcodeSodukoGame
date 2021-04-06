@@ -15,6 +15,8 @@
 		BB9CB475261BD0BC009EC3D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9CB473261BD0BC009EC3D8 /* LaunchScreen.storyboard */; };
 		BB9CB480261BD0BC009EC3D8 /* SodukoGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9CB47F261BD0BC009EC3D8 /* SodukoGameTests.swift */; };
 		BB9CB48B261BD0BC009EC3D8 /* SodukoGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9CB48A261BD0BC009EC3D8 /* SodukoGameUITests.swift */; };
+		BB9CB49C261BD0E4009EC3D8 /* sodukoFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9CB49B261BD0E4009EC3D8 /* sodukoFuncs.swift */; };
+		BB9CB4A1261BEC84009EC3D8 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9CB4A0261BEC84009EC3D8 /* Grid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		BB9CB486261BD0BC009EC3D8 /* SodukoGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SodukoGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9CB48A261BD0BC009EC3D8 /* SodukoGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SodukoGameUITests.swift; sourceTree = "<group>"; };
 		BB9CB48C261BD0BC009EC3D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB9CB49B261BD0E4009EC3D8 /* sodukoFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sodukoFuncs.swift; sourceTree = "<group>"; };
+		BB9CB4A0261BEC84009EC3D8 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				BB9CB46A261BD0BB009EC3D8 /* SceneDelegate.swift */,
 				BB9CB46C261BD0BB009EC3D8 /* ViewController.swift */,
 				BB9CB46E261BD0BB009EC3D8 /* Main.storyboard */,
+				BB9CB4A0261BEC84009EC3D8 /* Grid.swift */,
+				BB9CB49B261BD0E4009EC3D8 /* sodukoFuncs.swift */,
 				BB9CB471261BD0BC009EC3D8 /* Assets.xcassets */,
 				BB9CB473261BD0BC009EC3D8 /* LaunchScreen.storyboard */,
 				BB9CB476261BD0BC009EC3D8 /* Info.plist */,
@@ -258,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB9CB49C261BD0E4009EC3D8 /* sodukoFuncs.swift in Sources */,
 				BB9CB46D261BD0BB009EC3D8 /* ViewController.swift in Sources */,
 				BB9CB469261BD0BB009EC3D8 /* AppDelegate.swift in Sources */,
+				BB9CB4A1261BEC84009EC3D8 /* Grid.swift in Sources */,
 				BB9CB46B261BD0BB009EC3D8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
