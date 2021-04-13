@@ -10,7 +10,7 @@
 		BB9CB469261BD0BB009EC3D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9CB468261BD0BB009EC3D8 /* AppDelegate.swift */; };
 		BB9CB46B261BD0BB009EC3D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9CB46A261BD0BB009EC3D8 /* SceneDelegate.swift */; };
 		BB9CB46D261BD0BB009EC3D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9CB46C261BD0BB009EC3D8 /* ViewController.swift */; };
-		BB9CB470261BD0BB009EC3D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9CB46E261BD0BB009EC3D8 /* Main.storyboard */; };
+		BB9CB470261BD0BB009EC3D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9CB46E261BD0BB009EC3D8 /* Main.storyboard */; settings = {ASSET_TAGS = (0, ); }; };
 		BB9CB472261BD0BC009EC3D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9CB471261BD0BC009EC3D8 /* Assets.xcassets */; };
 		BB9CB475261BD0BC009EC3D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9CB473261BD0BC009EC3D8 /* LaunchScreen.storyboard */; };
 		BB9CB480261BD0BC009EC3D8 /* SodukoGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9CB47F261BD0BC009EC3D8 /* SodukoGameTests.swift */; };
@@ -196,6 +196,9 @@
 		BB9CB45D261BD0BB009EC3D8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					0,
+				);
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {

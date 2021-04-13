@@ -11,23 +11,8 @@ class Grid: UIView {
     // (0,0) at the upper left corner
     
     func drawGrid() {
-        //draw the left line
-//        let vertLine = UIBezierPath()
-//        vertLine.move(to: .init(x: 50, y: 50))
-//        vertLine.addLine(to: .init(x: 50, y: bounds.height - 50))
-//        UIColor.black.setStroke()
-//        vertLine.lineWidth = 3
-//        vertLine.stroke()
-//
-//        //draw right line
-//        let vertLine2 = UIBezierPath()
-//        vertLine2.move(to: .init(x: bounds.maxX - 50, y: 50))
-//        vertLine2.addLine(to: .init(x: bounds.maxX - 50, y: bounds.height - 50))
-//        UIColor.black.setStroke()
-//        vertLine2.lineWidth = 3
-//        vertLine2.stroke()
-//
-        //draw horizontal line
+
+        //draw horizontal lines
         for i in 1..<11 {
             let test = CGFloat(i)
             let testLine = UIBezierPath()
@@ -41,7 +26,7 @@ class Grid: UIView {
             UIColor.black.setStroke()
             testLine.stroke()
         }
-        //draw vertical line
+        //draw vertical lines
         for i in 1..<11 {
             let test = CGFloat(i)
             let testLine1 = UIBezierPath()

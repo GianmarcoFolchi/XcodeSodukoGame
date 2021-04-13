@@ -19,8 +19,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zg8-W2-1g9" customClass="Grid" customModule="SodukoGame" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="6.5" translatesAutoresizingMaskIntoConstraints="NO" id="QZn-aD-8eT">
-                                        <rect key="frame" x="43" y="41" width="340" height="347"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="6.5" translatesAutoresizingMaskIntoConstraints="NO" id="QZn-aD-8eT">
+                                        <rect key="frame" x="37" y="40" width="340" height="347"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="k5n-hZ-LB9">
                                                 <rect key="frame" x="0.0" y="0.0" width="32" height="347"/>
@@ -32,686 +32,926 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Bub-ja-8Mm"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="BUF-pP-bRh">
+                                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="BUF-pP-bRh">
                                                         <rect key="frame" x="0.0" y="39" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="toj-gG-iei"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="R6E-PA-nGS"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="YY7-tz-Vfg">
+                                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="YY7-tz-Vfg">
                                                         <rect key="frame" x="0.0" y="78" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="vqx-Ia-g6Z"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="3td-KL-0J2"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="pcS-X1-s7b">
+                                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="pcS-X1-s7b">
                                                         <rect key="frame" x="0.0" y="117" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="yls-5C-JKl"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="TGi-R5-BK3"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="T9a-4F-JmB">
+                                                    <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="T9a-4F-JmB">
                                                         <rect key="frame" x="0.0" y="156" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="kIl-wm-ahp"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="2Kb-qg-saV"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="m8y-1T-azu">
+                                                    <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="m8y-1T-azu">
                                                         <rect key="frame" x="0.0" y="195" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="HkP-Mm-lxJ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="aWO-Ak-e9h"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Jvj-1H-j1D">
+                                                    <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Jvj-1H-j1D">
                                                         <rect key="frame" x="0.0" y="234" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="z4r-sD-YEG"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="zZp-jk-DqT"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="E2f-Mg-CWe">
+                                                    <textField opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="E2f-Mg-CWe">
                                                         <rect key="frame" x="0.0" y="273" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="Cp3-5C-7Ne"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="cdr-SJ-9gt"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="l7r-Qg-fPq">
+                                                    <textField opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="l7r-Qg-fPq">
                                                         <rect key="frame" x="0.0" y="312" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="2Zm-PW-qwN"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="7f1-d8-581"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="rnX-EY-oWA">
                                                 <rect key="frame" x="38.5" y="0.0" width="32" height="347"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="ElI-46-m1R">
+                                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="ElI-46-m1R">
                                                         <rect key="frame" x="0.0" y="0.0" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="HCV-7Q-WfP"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="SDe-nD-FlV"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="vFk-5A-X6l">
+                                                    <textField opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="vFk-5A-X6l">
                                                         <rect key="frame" x="0.0" y="39" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="abO-JI-mhS"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Vmn-e0-5dr"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="9ZJ-bp-lcp">
+                                                    <textField opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="9ZJ-bp-lcp">
                                                         <rect key="frame" x="0.0" y="78" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="hFe-0H-Eww"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="PEb-Hr-fad"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="AGN-To-4wE">
+                                                    <textField opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="AGN-To-4wE">
                                                         <rect key="frame" x="0.0" y="117" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="gD5-mo-mX9"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ADG-VO-qmC"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="dWr-UC-Yj6">
+                                                    <textField opaque="NO" tag="41" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="dWr-UC-Yj6">
                                                         <rect key="frame" x="0.0" y="156" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="eJA-o7-10o"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="of6-NY-mwN"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="YTX-5s-UkH">
+                                                    <textField opaque="NO" tag="51" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="YTX-5s-UkH">
                                                         <rect key="frame" x="0.0" y="195" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="DjH-4F-TWO"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="PbF-ro-KWm"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="tBW-f6-htF">
+                                                    <textField opaque="NO" tag="61" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="tBW-f6-htF">
                                                         <rect key="frame" x="0.0" y="234" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="GaM-Lf-tF5"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="vR0-wt-slW"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="4sf-lH-w2s">
+                                                    <textField opaque="NO" tag="71" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="4sf-lH-w2s">
                                                         <rect key="frame" x="0.0" y="273" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="DpR-KI-FNI"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="o1G-yl-coT"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="7qc-Rz-eOZ">
+                                                    <textField opaque="NO" tag="81" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="7qc-Rz-eOZ">
                                                         <rect key="frame" x="0.0" y="312" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="3r2-Tb-lIe"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="bhb-bB-WOW"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="HWl-z0-JhY">
                                                 <rect key="frame" x="77" y="0.0" width="32" height="347"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="sFo-lL-Dm3">
+                                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="sFo-lL-Dm3">
                                                         <rect key="frame" x="0.0" y="0.0" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="ir4-1V-dFy"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="4iW-7B-6We"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="VhT-8j-yvZ">
+                                                    <textField opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="VhT-8j-yvZ">
                                                         <rect key="frame" x="0.0" y="39" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="86r-1q-bJh"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="8E8-mB-tpy"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="v9L-TR-xDJ">
+                                                    <textField opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="v9L-TR-xDJ">
                                                         <rect key="frame" x="0.0" y="78" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="rqx-uG-4J0"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="07u-iz-oHi"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="DhG-m8-G2C">
+                                                    <textField opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="DhG-m8-G2C">
                                                         <rect key="frame" x="0.0" y="117" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="ckZ-l2-rn8"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="8oD-mr-4EL"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="3KC-9G-SgM">
+                                                    <textField opaque="NO" tag="42" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="3KC-9G-SgM">
                                                         <rect key="frame" x="0.0" y="156" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="HyL-oa-KKR"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="MgD-sf-711"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="aQC-DT-rdI">
+                                                    <textField opaque="NO" tag="52" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="aQC-DT-rdI">
                                                         <rect key="frame" x="0.0" y="195" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="IOp-uk-qfQ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="dv0-0s-w0m"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Ocn-Vh-S7b">
+                                                    <textField opaque="NO" tag="62" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Ocn-Vh-S7b">
                                                         <rect key="frame" x="0.0" y="234" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="BPC-ug-3V2"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="7nc-pp-Ag1"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="eFV-aY-mQM">
+                                                    <textField opaque="NO" tag="72" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="eFV-aY-mQM">
                                                         <rect key="frame" x="0.0" y="273" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="YKd-hH-qEl"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="UTd-AT-Zkk"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Z98-5A-r5N">
+                                                    <textField opaque="NO" tag="82" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Z98-5A-r5N">
                                                         <rect key="frame" x="0.0" y="312" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="Aj0-yj-nml"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="3PU-Ud-WoB"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="IK9-B6-4wz">
                                                 <rect key="frame" x="115.5" y="0.0" width="32" height="347"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="syF-FY-wma">
+                                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="syF-FY-wma">
                                                         <rect key="frame" x="0.0" y="0.0" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="oQh-sV-rxC"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="KNP-Ez-3hB"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Dsx-Hz-oWo">
+                                                    <textField opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Dsx-Hz-oWo">
                                                         <rect key="frame" x="0.0" y="39" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="gds-Uc-Vqd"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="hKa-Yn-WXz"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="OH5-e4-ZwY">
+                                                    <textField opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="OH5-e4-ZwY">
                                                         <rect key="frame" x="0.0" y="78" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="gfm-PJ-zS0"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="X7k-Y7-C83"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="7ta-gz-hyI">
+                                                    <textField opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="7ta-gz-hyI">
                                                         <rect key="frame" x="0.0" y="117" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="1hV-9J-7HI"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ojr-tg-22H"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Kfh-aD-nYv">
+                                                    <textField opaque="NO" tag="43" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Kfh-aD-nYv">
                                                         <rect key="frame" x="0.0" y="156" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="h57-NT-73y"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="O11-KD-dB6"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="XJ2-Do-6jG">
+                                                    <textField opaque="NO" tag="53" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="XJ2-Do-6jG">
                                                         <rect key="frame" x="0.0" y="195" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="HYP-9c-GCn"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Asb-hg-hTR"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="htX-LA-UUg">
+                                                    <textField opaque="NO" tag="63" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="htX-LA-UUg">
                                                         <rect key="frame" x="0.0" y="234" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="rV7-wY-xah"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="MY5-Az-fcV"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="kOY-fs-nSe">
+                                                    <textField opaque="NO" tag="73" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="kOY-fs-nSe">
                                                         <rect key="frame" x="0.0" y="273" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="kB4-6N-dfG"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="DEg-0r-eOd"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="hwJ-hd-3FM">
+                                                    <textField opaque="NO" tag="83" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="hwJ-hd-3FM">
                                                         <rect key="frame" x="0.0" y="312" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="cLw-7L-gxp"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="34c-IC-kpa"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="meP-TR-yne">
                                                 <rect key="frame" x="154" y="0.0" width="32" height="347"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Z0P-8P-af5">
+                                                    <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Z0P-8P-af5">
                                                         <rect key="frame" x="0.0" y="0.0" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="iIc-Gz-M3s"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Ec8-D7-eem"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="7Tg-bg-V9X">
+                                                    <textField opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="7Tg-bg-V9X">
                                                         <rect key="frame" x="0.0" y="39" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="9sV-4m-K6v"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="zgd-n5-xBW"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Ho4-bO-XyO">
+                                                    <textField opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Ho4-bO-XyO">
                                                         <rect key="frame" x="0.0" y="78" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="XXf-eE-GpM"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="6VY-Or-ubZ"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="atU-U9-2u9">
+                                                    <textField opaque="NO" tag="34" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="atU-U9-2u9">
                                                         <rect key="frame" x="0.0" y="117" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="laW-YO-eou"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Foq-uB-cuz"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Rhf-Db-FzF">
+                                                    <textField opaque="NO" tag="44" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Rhf-Db-FzF">
                                                         <rect key="frame" x="0.0" y="156" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="uK8-Cf-NJu"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="bmy-s0-Fgj"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="fVY-Jn-pf2">
+                                                    <textField opaque="NO" tag="54" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="fVY-Jn-pf2">
                                                         <rect key="frame" x="0.0" y="195" width="32" height="35"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="32" id="O7n-Gh-chv"/>
-                                                        </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="W32-jf-Fhe"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="deo-JD-XYL">
+                                                    <textField opaque="NO" tag="64" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="deo-JD-XYL">
                                                         <rect key="frame" x="0.0" y="234" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="Zy3-cL-GvU"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="RWx-S1-YTx"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Oe1-yb-DDr">
+                                                    <textField opaque="NO" tag="74" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Oe1-yb-DDr">
                                                         <rect key="frame" x="0.0" y="273" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="7OH-Cq-PfQ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="3cc-Dl-a5a"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="pW7-PE-YeC">
+                                                    <textField opaque="NO" tag="84" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="pW7-PE-YeC">
                                                         <rect key="frame" x="0.0" y="312" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="lZa-5W-Rje"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="5Lt-nB-tTL"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8qn-ee-tVl">
                                                 <rect key="frame" x="192.5" y="0.0" width="32" height="347"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="QW9-r4-kPo">
+                                                    <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="QW9-r4-kPo">
                                                         <rect key="frame" x="0.0" y="0.0" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="khm-Qf-T4x"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="uI9-62-SUH"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Ugl-gA-8tr">
+                                                    <textField opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Ugl-gA-8tr">
                                                         <rect key="frame" x="0.0" y="39" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="weE-Ll-OXr"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="SCc-iQ-UG9"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="ToA-Xr-dmv">
+                                                    <textField opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="ToA-Xr-dmv">
                                                         <rect key="frame" x="0.0" y="78" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="0AS-AI-HMb"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="2Fh-ys-31d"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="xCb-jd-XY3">
+                                                    <textField opaque="NO" tag="35" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="xCb-jd-XY3">
                                                         <rect key="frame" x="0.0" y="117" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="oyz-o9-eCB"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="jEg-BQ-e3I"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="eKd-tn-SXc">
+                                                    <textField opaque="NO" tag="45" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="eKd-tn-SXc">
                                                         <rect key="frame" x="0.0" y="156" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="NKu-TT-GSy"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="0Ln-h9-hbU"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="xkq-u5-bv3">
+                                                    <textField opaque="NO" tag="55" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="xkq-u5-bv3">
                                                         <rect key="frame" x="0.0" y="195" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="2a4-nw-v0Y"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="IUI-jy-CM7"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="8cf-ku-vSA">
+                                                    <textField opaque="NO" tag="65" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="8cf-ku-vSA">
                                                         <rect key="frame" x="0.0" y="234" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="ffr-vY-WeE"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Vhn-dX-MFv"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="5Mm-1g-NOa">
+                                                    <textField opaque="NO" tag="75" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="5Mm-1g-NOa">
                                                         <rect key="frame" x="0.0" y="273" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="Pv7-pw-6At"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="7HI-6f-cZJ"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="plC-ro-lZy">
+                                                    <textField opaque="NO" tag="85" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="plC-ro-lZy">
                                                         <rect key="frame" x="0.0" y="312" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="pAg-Qs-AKw"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="fLJ-08-gBo"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="5SA-jB-YYi">
                                                 <rect key="frame" x="231" y="0.0" width="32" height="347"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="u7k-5g-Ahk">
+                                                    <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="u7k-5g-Ahk">
                                                         <rect key="frame" x="0.0" y="0.0" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="2lD-5k-3ro"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="o22-5d-pVN"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Qxg-yq-l9X">
+                                                    <textField opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Qxg-yq-l9X">
                                                         <rect key="frame" x="0.0" y="39" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="mhf-5A-lzi"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="FWh-aL-2ET"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="m7h-W2-AQJ">
+                                                    <textField opaque="NO" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="m7h-W2-AQJ">
                                                         <rect key="frame" x="0.0" y="78" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="zBa-Tt-RLl"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="rT9-zL-Xtg"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="5a0-OB-C0b">
+                                                    <textField opaque="NO" tag="36" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="5a0-OB-C0b">
                                                         <rect key="frame" x="0.0" y="117" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="7n5-H6-bb9"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="TDO-Jd-fbo"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="njs-yZ-iq0">
+                                                    <textField opaque="NO" tag="46" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="njs-yZ-iq0">
                                                         <rect key="frame" x="0.0" y="156" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="ESk-Yb-4Vr"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="mG3-c7-9kA"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="7iD-io-lsr">
+                                                    <textField opaque="NO" tag="56" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="7iD-io-lsr">
                                                         <rect key="frame" x="0.0" y="195" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="RBP-qk-rGa"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="X7J-hI-LCF"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="37H-2h-jnX">
+                                                    <textField opaque="NO" tag="66" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="37H-2h-jnX">
                                                         <rect key="frame" x="0.0" y="234" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="5ka-cs-nKa"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="jRm-2J-acM"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Fro-5C-394">
+                                                    <textField opaque="NO" tag="76" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Fro-5C-394">
                                                         <rect key="frame" x="0.0" y="273" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="lEx-T7-eq0"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="t7f-e2-r6c"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="3Wp-Xt-dmm">
+                                                    <textField opaque="NO" tag="86" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="3Wp-Xt-dmm">
                                                         <rect key="frame" x="0.0" y="312" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="uGv-cL-j5G"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Khq-h7-vLu"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kzC-FA-2HQ">
                                                 <rect key="frame" x="269.5" y="0.0" width="32" height="347"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Ylk-8t-3L6">
+                                                    <textField opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Ylk-8t-3L6">
                                                         <rect key="frame" x="0.0" y="0.0" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="Pb5-t9-kwz"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="3Zn-ak-VZr"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="DGF-sN-wyJ">
+                                                    <textField opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="DGF-sN-wyJ">
                                                         <rect key="frame" x="0.0" y="39" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="oEI-oF-5pl"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="NBY-Lz-OAd"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="ikm-Ow-zDg">
+                                                    <textField opaque="NO" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="ikm-Ow-zDg">
                                                         <rect key="frame" x="0.0" y="78" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="sUR-YE-qQh"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="cng-gN-gZc"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="PUs-no-qAL">
+                                                    <textField opaque="NO" tag="37" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="PUs-no-qAL">
                                                         <rect key="frame" x="0.0" y="117" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="rL7-Sd-eOh"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="OmY-hw-7XP"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="XeW-Uh-Vxl">
+                                                    <textField opaque="NO" tag="47" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="XeW-Uh-Vxl">
                                                         <rect key="frame" x="0.0" y="156" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="PK6-iM-g6W"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ikD-jh-En1"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="VO4-eN-jXj">
+                                                    <textField opaque="NO" tag="57" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="VO4-eN-jXj">
                                                         <rect key="frame" x="0.0" y="195" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="22O-Wk-9By"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="W9b-wS-BLd"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="BFS-gE-n9s">
+                                                    <textField opaque="NO" tag="67" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="BFS-gE-n9s">
                                                         <rect key="frame" x="0.0" y="234" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="Qot-Bm-59X"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="t2T-Dr-pHP"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="CGb-wd-7vf">
+                                                    <textField opaque="NO" tag="77" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="CGb-wd-7vf">
                                                         <rect key="frame" x="0.0" y="273" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="V5V-fo-3Pj"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Qba-Ss-SmT"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="8YX-dT-Le6">
+                                                    <textField opaque="NO" tag="87" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="8YX-dT-Le6">
                                                         <rect key="frame" x="0.0" y="312" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="f03-pU-iJq"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="LKz-bV-f7K"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="fEY-y3-dpF">
                                                 <rect key="frame" x="308" y="0.0" width="32" height="347"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="G3W-Si-Wt5">
+                                                    <textField opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="G3W-Si-Wt5">
                                                         <rect key="frame" x="0.0" y="0.0" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="C7I-Ty-2cO"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="XJS-uM-ATm"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="8u8-SH-8e7">
+                                                    <textField opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="8u8-SH-8e7">
                                                         <rect key="frame" x="0.0" y="39" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="gIv-OU-e4E"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="syF-m1-S4s"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="fN0-bK-Kdd">
+                                                    <textField opaque="NO" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="fN0-bK-Kdd">
                                                         <rect key="frame" x="0.0" y="78" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="Tse-n8-rvy"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ob7-sd-dpq"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="rsp-Si-iU5">
+                                                    <textField opaque="NO" tag="38" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="rsp-Si-iU5">
                                                         <rect key="frame" x="0.0" y="117" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="B4W-jT-OkE"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="DIo-QT-AB9"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="bYr-B5-iSl">
+                                                    <textField opaque="NO" tag="48" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="bYr-B5-iSl">
                                                         <rect key="frame" x="0.0" y="156" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="zjH-0Q-8FD"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="pyk-sT-5Co"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="YCF-gi-BzP">
+                                                    <textField opaque="NO" tag="58" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="YCF-gi-BzP">
                                                         <rect key="frame" x="0.0" y="195" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="Ehs-Oz-DfQ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="JyC-bf-4fD"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="iCv-Rb-BlY">
+                                                    <textField opaque="NO" tag="68" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="iCv-Rb-BlY">
                                                         <rect key="frame" x="0.0" y="234" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="ov6-ow-3hi"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="mKJ-WE-FIN"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="VZA-dL-l89">
+                                                    <textField opaque="NO" tag="78" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="VZA-dL-l89">
                                                         <rect key="frame" x="0.0" y="273" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="ybM-j2-liZ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="7LO-dc-lLI"/>
+                                                        </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="cZh-kP-hSq">
+                                                    <textField opaque="NO" tag="88" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="cZh-kP-hSq">
                                                         <rect key="frame" x="0.0" y="312" width="32" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="XKU-Jq-Oyp"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <connections>
+                                                            <action selector="actTest:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="kuT-9e-zzJ"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
@@ -734,6 +974,89 @@
                             <constraint firstItem="Zg8-W2-1g9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m3F-gd-0LC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="inOrderList" destination="YME-Ys-S3i" collectionClass="NSMutableArray" id="l1P-JB-tvu"/>
+                        <outletCollection property="inOrderList" destination="ElI-46-m1R" collectionClass="NSMutableArray" id="f9p-DX-zb4"/>
+                        <outletCollection property="inOrderList" destination="sFo-lL-Dm3" collectionClass="NSMutableArray" id="Ssx-Ic-0RW"/>
+                        <outletCollection property="inOrderList" destination="syF-FY-wma" collectionClass="NSMutableArray" id="PY7-6d-ZiU"/>
+                        <outletCollection property="inOrderList" destination="Z0P-8P-af5" collectionClass="NSMutableArray" id="362-Zg-tOr"/>
+                        <outletCollection property="inOrderList" destination="QW9-r4-kPo" collectionClass="NSMutableArray" id="hta-y7-e5r"/>
+                        <outletCollection property="inOrderList" destination="u7k-5g-Ahk" collectionClass="NSMutableArray" id="Xp3-Js-kXi"/>
+                        <outletCollection property="inOrderList" destination="Ylk-8t-3L6" collectionClass="NSMutableArray" id="wYO-xU-wq9"/>
+                        <outletCollection property="inOrderList" destination="G3W-Si-Wt5" collectionClass="NSMutableArray" id="rQ1-Wn-TBE"/>
+                        <outletCollection property="inOrderList" destination="BUF-pP-bRh" collectionClass="NSMutableArray" id="l7S-Uu-mBC"/>
+                        <outletCollection property="inOrderList" destination="vFk-5A-X6l" collectionClass="NSMutableArray" id="g62-AC-O1D"/>
+                        <outletCollection property="inOrderList" destination="VhT-8j-yvZ" collectionClass="NSMutableArray" id="5eZ-70-9Hh"/>
+                        <outletCollection property="inOrderList" destination="Dsx-Hz-oWo" collectionClass="NSMutableArray" id="wIA-pG-Vjb"/>
+                        <outletCollection property="inOrderList" destination="7Tg-bg-V9X" collectionClass="NSMutableArray" id="drr-EC-lsE"/>
+                        <outletCollection property="inOrderList" destination="Ugl-gA-8tr" collectionClass="NSMutableArray" id="R03-Wr-uEv"/>
+                        <outletCollection property="inOrderList" destination="Qxg-yq-l9X" collectionClass="NSMutableArray" id="3ly-QG-cCM"/>
+                        <outletCollection property="inOrderList" destination="DGF-sN-wyJ" collectionClass="NSMutableArray" id="5LV-Dl-LOb"/>
+                        <outletCollection property="inOrderList" destination="8u8-SH-8e7" collectionClass="NSMutableArray" id="3lM-jP-XKD"/>
+                        <outletCollection property="inOrderList" destination="YY7-tz-Vfg" collectionClass="NSMutableArray" id="Ysf-Yg-L8y"/>
+                        <outletCollection property="inOrderList" destination="9ZJ-bp-lcp" collectionClass="NSMutableArray" id="32U-gy-u9U"/>
+                        <outletCollection property="inOrderList" destination="v9L-TR-xDJ" collectionClass="NSMutableArray" id="6Oe-zt-dRc"/>
+                        <outletCollection property="inOrderList" destination="OH5-e4-ZwY" collectionClass="NSMutableArray" id="h15-E9-QT1"/>
+                        <outletCollection property="inOrderList" destination="Ho4-bO-XyO" collectionClass="NSMutableArray" id="JWW-z0-ONh"/>
+                        <outletCollection property="inOrderList" destination="ToA-Xr-dmv" collectionClass="NSMutableArray" id="4Oi-ID-NJr"/>
+                        <outletCollection property="inOrderList" destination="m7h-W2-AQJ" collectionClass="NSMutableArray" id="Pne-yC-YQw"/>
+                        <outletCollection property="inOrderList" destination="ikm-Ow-zDg" collectionClass="NSMutableArray" id="pqt-Fi-4iY"/>
+                        <outletCollection property="inOrderList" destination="fN0-bK-Kdd" collectionClass="NSMutableArray" id="lgJ-sG-9xb"/>
+                        <outletCollection property="inOrderList" destination="pcS-X1-s7b" collectionClass="NSMutableArray" id="uj3-Q1-uMu"/>
+                        <outletCollection property="inOrderList" destination="AGN-To-4wE" collectionClass="NSMutableArray" id="LtT-gR-13a"/>
+                        <outletCollection property="inOrderList" destination="DhG-m8-G2C" collectionClass="NSMutableArray" id="pSu-Vu-Tso"/>
+                        <outletCollection property="inOrderList" destination="7ta-gz-hyI" collectionClass="NSMutableArray" id="wMQ-uX-tbV"/>
+                        <outletCollection property="inOrderList" destination="atU-U9-2u9" collectionClass="NSMutableArray" id="7Yr-wu-EVw"/>
+                        <outletCollection property="inOrderList" destination="xCb-jd-XY3" collectionClass="NSMutableArray" id="SAa-3d-sgW"/>
+                        <outletCollection property="inOrderList" destination="5a0-OB-C0b" collectionClass="NSMutableArray" id="aZ4-pu-THr"/>
+                        <outletCollection property="inOrderList" destination="PUs-no-qAL" collectionClass="NSMutableArray" id="PeN-gH-qlQ"/>
+                        <outletCollection property="inOrderList" destination="rsp-Si-iU5" collectionClass="NSMutableArray" id="P0I-8j-Cib"/>
+                        <outletCollection property="inOrderList" destination="T9a-4F-JmB" collectionClass="NSMutableArray" id="ebN-rT-PGe"/>
+                        <outletCollection property="inOrderList" destination="dWr-UC-Yj6" collectionClass="NSMutableArray" id="woA-JE-LAH"/>
+                        <outletCollection property="inOrderList" destination="3KC-9G-SgM" collectionClass="NSMutableArray" id="7Ow-nQ-nB4"/>
+                        <outletCollection property="inOrderList" destination="Kfh-aD-nYv" collectionClass="NSMutableArray" id="PgJ-dc-5rC"/>
+                        <outletCollection property="inOrderList" destination="Rhf-Db-FzF" collectionClass="NSMutableArray" id="SNg-DY-vUA"/>
+                        <outletCollection property="inOrderList" destination="eKd-tn-SXc" collectionClass="NSMutableArray" id="Bn0-t2-sRJ"/>
+                        <outletCollection property="inOrderList" destination="njs-yZ-iq0" collectionClass="NSMutableArray" id="Qac-lp-DoI"/>
+                        <outletCollection property="inOrderList" destination="XeW-Uh-Vxl" collectionClass="NSMutableArray" id="BZ3-qu-5UJ"/>
+                        <outletCollection property="inOrderList" destination="bYr-B5-iSl" collectionClass="NSMutableArray" id="mh5-Wa-iVL"/>
+                        <outletCollection property="inOrderList" destination="m8y-1T-azu" collectionClass="NSMutableArray" id="xlV-Sf-Efq"/>
+                        <outletCollection property="inOrderList" destination="YTX-5s-UkH" collectionClass="NSMutableArray" id="NhG-lB-OFN"/>
+                        <outletCollection property="inOrderList" destination="aQC-DT-rdI" collectionClass="NSMutableArray" id="uVk-nX-S3S"/>
+                        <outletCollection property="inOrderList" destination="XJ2-Do-6jG" collectionClass="NSMutableArray" id="2NB-E7-2wm"/>
+                        <outletCollection property="inOrderList" destination="fVY-Jn-pf2" collectionClass="NSMutableArray" id="Ymk-lB-aqc"/>
+                        <outletCollection property="inOrderList" destination="xkq-u5-bv3" collectionClass="NSMutableArray" id="qNu-Lj-AgL"/>
+                        <outletCollection property="inOrderList" destination="7iD-io-lsr" collectionClass="NSMutableArray" id="CHx-8I-OPu"/>
+                        <outletCollection property="inOrderList" destination="VO4-eN-jXj" collectionClass="NSMutableArray" id="QFk-QK-rVE"/>
+                        <outletCollection property="inOrderList" destination="YCF-gi-BzP" collectionClass="NSMutableArray" id="P4N-ia-IWS"/>
+                        <outletCollection property="inOrderList" destination="Jvj-1H-j1D" collectionClass="NSMutableArray" id="HPq-X8-XKg"/>
+                        <outletCollection property="inOrderList" destination="tBW-f6-htF" collectionClass="NSMutableArray" id="eB4-KO-72Z"/>
+                        <outletCollection property="inOrderList" destination="Ocn-Vh-S7b" collectionClass="NSMutableArray" id="IOQ-wT-oZD"/>
+                        <outletCollection property="inOrderList" destination="htX-LA-UUg" collectionClass="NSMutableArray" id="wO3-fe-06f"/>
+                        <outletCollection property="inOrderList" destination="deo-JD-XYL" collectionClass="NSMutableArray" id="qRg-hx-Oqy"/>
+                        <outletCollection property="inOrderList" destination="8cf-ku-vSA" collectionClass="NSMutableArray" id="hWt-Q8-LeT"/>
+                        <outletCollection property="inOrderList" destination="37H-2h-jnX" collectionClass="NSMutableArray" id="E3z-qp-4Jw"/>
+                        <outletCollection property="inOrderList" destination="BFS-gE-n9s" collectionClass="NSMutableArray" id="nYO-17-wgr"/>
+                        <outletCollection property="inOrderList" destination="iCv-Rb-BlY" collectionClass="NSMutableArray" id="hdA-sc-NpT"/>
+                        <outletCollection property="inOrderList" destination="E2f-Mg-CWe" collectionClass="NSMutableArray" id="MFO-K9-5St"/>
+                        <outletCollection property="inOrderList" destination="4sf-lH-w2s" collectionClass="NSMutableArray" id="VLt-x1-fRl"/>
+                        <outletCollection property="inOrderList" destination="eFV-aY-mQM" collectionClass="NSMutableArray" id="Hry-yu-ooJ"/>
+                        <outletCollection property="inOrderList" destination="kOY-fs-nSe" collectionClass="NSMutableArray" id="NLJ-YB-eby"/>
+                        <outletCollection property="inOrderList" destination="Oe1-yb-DDr" collectionClass="NSMutableArray" id="LnR-da-XPd"/>
+                        <outletCollection property="inOrderList" destination="5Mm-1g-NOa" collectionClass="NSMutableArray" id="wev-a1-vis"/>
+                        <outletCollection property="inOrderList" destination="Fro-5C-394" collectionClass="NSMutableArray" id="DHx-0s-qDI"/>
+                        <outletCollection property="inOrderList" destination="CGb-wd-7vf" collectionClass="NSMutableArray" id="TXK-Ds-bK6"/>
+                        <outletCollection property="inOrderList" destination="VZA-dL-l89" collectionClass="NSMutableArray" id="p0l-J1-nfX"/>
+                        <outletCollection property="inOrderList" destination="l7r-Qg-fPq" collectionClass="NSMutableArray" id="hoy-i9-oM5"/>
+                        <outletCollection property="inOrderList" destination="7qc-Rz-eOZ" collectionClass="NSMutableArray" id="pyF-I9-NAA"/>
+                        <outletCollection property="inOrderList" destination="Z98-5A-r5N" collectionClass="NSMutableArray" id="R64-UH-dm5"/>
+                        <outletCollection property="inOrderList" destination="hwJ-hd-3FM" collectionClass="NSMutableArray" id="GHR-tT-v3j"/>
+                        <outletCollection property="inOrderList" destination="pW7-PE-YeC" collectionClass="NSMutableArray" id="ruj-SK-EF1"/>
+                        <outletCollection property="inOrderList" destination="plC-ro-lZy" collectionClass="NSMutableArray" id="8kn-vt-ZAm"/>
+                        <outletCollection property="inOrderList" destination="3Wp-Xt-dmm" collectionClass="NSMutableArray" id="4QM-In-fBX"/>
+                        <outletCollection property="inOrderList" destination="8YX-dT-Le6" collectionClass="NSMutableArray" id="Xhh-Pk-HLx"/>
+                        <outletCollection property="inOrderList" destination="cZh-kP-hSq" collectionClass="NSMutableArray" id="VLT-a4-1cv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

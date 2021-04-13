@@ -7,7 +7,7 @@
 
 import Foundation
 
-let DIM = 9
+public let DIM = 9
 let helperY = [0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3]
 let helperX = [0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2]
 let start = [0, 0, 0, 3, 3, 3, 6, 6, 6]
