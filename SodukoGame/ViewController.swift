@@ -9,12 +9,14 @@ import UIKit
 public var grid = Array(repeating: Array(repeating: 0, count: DIM), count: DIM)
 
 class ViewController: UIViewController {
+    var difficulty: Difficulty = .easy
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //generate and fill in the soduko
-        fillSoduko(grid: createSoduko(difficulty: Difficulty.easy))
+        fillSoduko(grid: createSoduko(difficulty: difficulty))
+        print(difficulty)
         
         
     }
@@ -39,7 +41,7 @@ class ViewController: UIViewController {
         
         for box in inOrderList {
             if grid[i][j] != 0 {
-            box.text = String(grid[i][j])
+                box.text = String(grid[i][j])
             }
             j += 1
             if j == DIM {

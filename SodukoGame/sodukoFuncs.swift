@@ -16,7 +16,48 @@ public enum Difficulty {
     case easy, medium, hard
 }
 
-
+public func fullSodukoIsValid(grid: [[Int]])-> Bool {
+    var x = [0, 3, 6]
+    var y = [0, 3, 6]
+    var counter = [Int](repeating: 0, count: 10)
+    //check the horizontal
+    for i in 0..<DIM {
+        counter = [Int](repeating: 0, count: 10)
+        for j in 0..<DIM {
+            if grid[i][j] != 0 {
+                counter[grid[i][j] - 1] += 1
+                if counter[grid[i][j] - 1] > 1 {
+                    return false
+                }
+            }
+        }
+    }
+    //check the vertical
+    for i in 0..<DIM {
+        counter = [Int](repeating: 0, count: 10)
+        for j in 0..<DIM {
+            if grid[j][i] != 0 {
+                counter[grid[j][i] - 1] += 1
+                if counter[grid[j][i] - 1] > 1 {
+                    return false
+                }
+            }
+        }
+    }
+    //check the sonnet
+    for valX in x {
+        counter = [Int](repeating: 0, count: 10)
+        for valY in y {
+            if grid[valX][valY] != 0 {
+                counter[[valX][valY] - 1] += 1
+                if counter[[valX][valY] - 1] > 1 {
+                    return false
+                }
+            }
+        }
+    }
+    return true
+}
 public func isValid(grid: [[Int]], r: Int, c: Int)-> Bool {
     if r > DIM || c > DIM {
         return false
