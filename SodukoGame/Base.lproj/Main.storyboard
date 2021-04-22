@@ -1011,6 +1011,14 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ag0-h5-Ge1">
+                                        <rect key="frame" x="180" y="528" width="55" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Is valid?"/>
+                                        <connections>
+                                            <action selector="checkValidity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MlP-Dv-pRx"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
@@ -1018,6 +1026,13 @@
                                     <constraint firstItem="QZn-aD-8eT" firstAttribute="leading" secondItem="Zg8-W2-1g9" secondAttribute="leading" constant="43" id="Yko-AI-A5h"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axe-Bf-wbr">
+                                <rect key="frame" x="186" y="419" width="42" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1030,6 +1045,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="GvI-VX-W4M"/>
                     <connections>
+                        <outlet property="testLabel" destination="axe-Bf-wbr" id="Qb4-wZ-QPy"/>
                         <outletCollection property="inOrderList" destination="YME-Ys-S3i" collectionClass="NSMutableArray" id="l1P-JB-tvu"/>
                         <outletCollection property="inOrderList" destination="ElI-46-m1R" collectionClass="NSMutableArray" id="f9p-DX-zb4"/>
                         <outletCollection property="inOrderList" destination="sFo-lL-Dm3" collectionClass="NSMutableArray" id="Ssx-Ic-0RW"/>

@@ -11,90 +11,10 @@ public let DIM = 9
 let helperY = [0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3]
 let helperX = [0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2]
 let start = [0, 0, 0, 3, 3, 3, 6, 6, 6]
+let sqrtDIM = 3
 
 public enum Difficulty {
     case easy, medium, hard
-}
-
-public func fullSodukoIsValid(grid: [[Int]])-> Bool {
-    var x = [0, 3, 6]
-    var y = [0, 3, 6]
-    var counter = [Int](repeating: 0, count: 10)
-    //check the horizontal
-    for i in 0..<DIM {
-        counter = [Int](repeating: 0, count: 10)
-        for j in 0..<DIM {
-            if grid[i][j] != 0 {
-                counter[grid[i][j] - 1] += 1
-                if counter[grid[i][j] - 1] > 1 {
-                    return false
-                }
-            }
-        }
-    }
-    //check the vertical
-    for i in 0..<DIM {
-        counter = [Int](repeating: 0, count: 10)
-        for j in 0..<DIM {
-            if grid[j][i] != 0 {
-                counter[grid[j][i] - 1] += 1
-                if counter[grid[j][i] - 1] > 1 {
-                    return false
-                }
-            }
-        }
-    }
-    //check the sonnet
-    for valX in x {
-        counter = [Int](repeating: 0, count: 10)
-        for valY in y {
-            if grid[valX][valY] != 0 {
-                counter[[valX][valY] - 1] += 1
-                if counter[[valX][valY] - 1] > 1 {
-                    return false
-                }
-            }
-        }
-    }
-    return true
-}
-public func isValid(grid: [[Int]], r: Int, c: Int)-> Bool {
-    if r > DIM || c > DIM {
-        return false
-    }
-    //check the vertical
-    var counter = [Int](repeating: 0, count: 10)
-    for i in 0..<DIM {
-        if grid[i][c] != 0 {
-            counter[grid[i][c] - 1] += 1
-            if counter[grid[i][c] - 1] > 1 {
-                return false
-            }
-        }
-    }
-    //check the horizontal
-    counter = [Int](repeating: 0, count: 9)
-    for i in 0..<DIM {
-        if grid[r][i] != 0 {
-            counter[grid[r][i] - 1] += 1
-            if counter[grid[r][i] - 1] > 1 {
-                return false
-            }
-        }
-    }
-    //check the sonnet
-    counter = [Int](repeating: 0, count: 9)
-    for i in 0..<DIM {
-        let startY = start[r] + helperY[i]
-        let startX = start[c] + helperX[i]
-        if grid[startY][startX] != 0 {
-            counter[grid[startY][startX] - 1] += 1
-            if counter[grid[startY][startX] - 1] > 1 {
-                return false
-            }
-        }
-    }
-    return true
 }
 
 public func solver(grid: inout [[Int]], r: Int, c: Int)-> Bool {
@@ -125,44 +45,29 @@ public func solver(grid: inout [[Int]], r: Int, c: Int)-> Bool {
     return false
 }
 
-
-public func printGrid(grid: [[Int]]) {
-    for array in grid {
-        for value in array {
-            print(value, terminator: " ")
-        }
-        print(" ")
-    }
-}
-
 public func createSoduko(difficulty: Difficulty)-> [[Int]] {
     var grid = fillGrid(times: 10)
-    if solver(grid: &grid, r: 0, c: 0) {
-        print("it was able to solve it ")
-        var num: Int
-        //remove values
-        if difficulty == Difficulty.easy {
+    var num: Int
+    if solver(grid: &grid, r: 0, c: 0) { //backtracking right here
+        switch difficulty {
+        case .easy:
             num = 41
-        } else if difficulty == Difficulty.medium  {
+        case .medium:
             num = 51
-        } else {
+        default:
             num = 56
         }
-         
-        for _ in 0..<num  { //removing numbers
+        for _ in 0..<num  { //removing random numbers based on the chosen difficulty
             let r = Int.random(in: 0..<DIM)
             let c = Int.random(in: 0..<DIM)
-            if grid[r][c] == 0 {
-                continue
-            } else {
-                grid[r][c] = 0
-            }
+            grid[r][c] = 0
         }
+        return grid
     } else {
-        print("recursion time ")
+        print("recursion")
+        //call the function again and return that value
         return createSoduko(difficulty: difficulty)
     }
-    return grid
 }
 
 public func fillGrid(times: Int)-> [[Int]] {
@@ -179,4 +84,13 @@ public func fillGrid(times: Int)-> [[Int]] {
         }
     }
     return grid
+}
+
+public func printGrid(grid: [[Int]]) {
+    for array in grid {
+        for value in array {
+            print(value, terminator: " ")
+        }
+        print(" ")
+    }
 }
